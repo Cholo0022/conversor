@@ -1,7 +1,7 @@
 
 public class Moneda {
 	private String nombre;
-	private String valor;
+	private double valor;
 	
 	public String getNombre() {
 		return nombre;
@@ -11,11 +11,11 @@ public class Moneda {
 		this.nombre = nombre;
 	}
 
-	public String getValor() {
+	public double getValor() {
 		return valor;
 	}
 
-	public void setValor(String valor) {
+	public void setValor(double valor) {
 		this.valor = valor;
 	}
 
