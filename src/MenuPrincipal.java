@@ -17,25 +17,27 @@ public class MenuPrincipal {
 					   "Conversor de divisas", JOptionPane.QUESTION_MESSAGE, null,
 					  new Object[] { "Seleccione","De Peso a Dólar", "De Peso a Euro", "De Peso a Real", "De Dólar a Peso", "De Euro a Peso", "De Real a Peso" },"Seleccione");
 
-			System.out.println(divisa);
+			//System.out.println(divisa);
 			double valor = Double.parseDouble(JOptionPane.showInputDialog("Ingrese valor a cotizar"));
 			 if (divisa == "De Peso a Dólar") {
 				PesoDolar pesoDolar = new PesoDolar();
 				pesoDolar.setValor(valor);
-				System.out.println(valor + " Pesos Argentinos equivalen a " + pesoDolar.getValor() + " dolares");
+				JOptionPane.showMessageDialog(null, "Usted tiene " + pesoDolar.getValor() + " dolares");
 			}
 			
 			if (divisa == "De Peso a Euro") {
 				PesoEuro pesoEuro = new PesoEuro();
 				pesoEuro.setValor(valor);
-				System.out.println(valor + " Pesos Argentinos equivalen a " + pesoEuro.getValor() + " euros");
+				JOptionPane.showMessageDialog(null, "Usted tiene " + pesoEuro.getValor() + " euros");
 			}
 			
 			if (divisa == "De Peso a Real") {
 				PesoReal pesoReal = new PesoReal();
 				pesoReal.setValor(valor);
-				System.out.println(valor + " Pesos Argentinos equivalen a " + pesoReal.getValor() + " reales");
+				JOptionPane.showMessageDialog(null, "Usted tiene " + pesoReal.getValor() + " reales");
 			}
+			
+			
 			
 		}
 				
