@@ -1,8 +1,9 @@
 package ar.com.conversor;
+
 public class Moneda {
 	private String nombre;
 	private double valor;
-	
+
 	public Moneda(String nombre, double valor) {
 		super();
 		this.nombre = nombre;
@@ -25,12 +26,12 @@ public class Moneda {
 		this.valor = valor;
 	}
 
-	public double convertirDePesoADivisa(double valor)  {
+	public double convertirDePesoADivisa(double valor) throws MiException {
 		return valor / this.valor;
-		
+
 	}
-	
-	public double convertirDeDivisaAPeso(double valor) {
+
+	public double convertirDeDivisaAPeso(double valor) throws Exception {
 		return this.valor * valor;
 	}
 
